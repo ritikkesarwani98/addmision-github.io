@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Admission Prediction System</title>
+	<style>
+        #a1{
+            background-color: #f0edc3;
+           
+        }
+        h3
+{
+	padding:15px;
+	text-align:left;
+	text-decoration:underline;
+	color:beige;
+	background-color:rgb(238, 180, 147);
+}
+.buttons
+{
+	text-align:center;
+	display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px auto;
+    color: white;
+    background-color: maroon;
+    border: 1px solid;
+    border-radius: 10px 0px 10px;
+    cursor: pointer;
+	padding:10px 40px;
+}
+input[type=text],select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:content-box;
+  align-self: center;
+}
+input[type=number] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:content-box;
+  align-self: center;
+}
+input[type=select] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:content-box;
+  align-self: center;
+}
+input[type=email] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:content-box;
+  align-self: center;
+}
+
+input[type=date] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:content-box;
+  align-self: center;
+}
+
+
+
+
+
+        body {
+            background-image: url("https://c0.wallpaperflare.com/preview/456/435/782/book-read-student-students.jpg");
+            
+            background-repeat:no-repeat; background-size: 100% 100%;
+}
+
+.header{width: 100%; margin:auto; padding: 20px; background: #DCDCDC}
+.header h1{font-size: 35px; color: #a1cef3; width:100%;}
+
+.menu{width: 100%; margin: auto; padding: 20px; background: #d0b1e2}
+.menu a{font-size: 20px; margin-right: 10px; color:#A0522D; font-weight: bold; text-decoration: none}
+.menu a:hover{color: #397c5b; text-decoration: underline;}
+
+.paragraf p{color: #8B4513; margin: auto; padding: 10px;}
+
+.footer h5{text-align: center; color: #b5e798; background-color: #140404; 
+	padding: 10px; font-weight: bold;}
+    </style>
+</head>
+<body>
+	<div class="header">
+		<h1>College Admission Prediction System</h1>
+	</div>
+	<div class="menu">
+		<a href="E:/Program Latihan/latihan3/index.html">Home</a>
+		<a href="E:/Program Latihan/latihan3/profile.html">Profile</a>
+		<a href="">About</a>
+		
+	</div>
+    <div id="a1">
+	<form method="post" action="validation.php">
+        <h3>Personal Details</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" placeholder="First Name">
+		<br>
+        <hr>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="namalengkap" required placeholder="Last Name">
+		<br>
+        <hr>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="namalengkap" placeholder="Mobile.">
+		<br>
+        <hr>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" placeholder="Enter your email">
+		<br>
+        <hr>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select>  
+            <option placeholder="Select"  > </option>
+            <option >Male</option>  
+            <option>Female</option>  
+            <option>Other</option>   
+            </select>
+		<br>
+        <hr>
+        <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Of Birth : &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="date" name="dob" size="30" maxlength="500" value="" placeholder="Date Of Bith"required/><br><br>
+		
+        <h3>Educational Details</h3>
+        
+        <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;High School : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="text" name="class_10" size="30" maxlength="250" value="" placeholder="School Name"required/>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter the School name in which you studied Class 10</p><br>
+                            <hr>
+                            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University/Board Name :</label>
+                            <select>  
+                                <option  selected disabled hidden> </option>
+                                <option>CBSE Board</option>  
+                                <option>ICSE Board</option>  
+                                <option>State Board</option>  
+                                <option>Other</option>   
+                                </select>
+                                <br>
+                            <hr>
+                            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;High School Percentage/ CGPA :</label>
+                            <input type="number" name="percentage" size="30" maxlength="250" value="" required placeholder="Enter your High School's Percentage/ CGPA "/>
+                            
+                            <hr>
+
+
+                            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intermediate : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="text" name="class_12" size="30" maxlength="250" value="" placeholder="School Name"required/>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter the School name in which you studied Class 12</p><br>
+                            <hr>
+                            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University/Board Name :</label>
+                            <select>  
+                                <option placeholder="Select"> </option>
+                                <option>CBSE Board</option>  
+                                <option>ICSE Board</option>  
+                                <option>State Board</option>  
+                                <option>Other</option>   
+                                </select>
+                                <br>
+                            <hr>
+                            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intermediate Percentage/ CGPA :</label>
+                           <input type="number" name="percentageinter" size="30" maxlength="250" value="" placeholder="Enter your Intermediate's Percentage/ CGPA "required/>
+                            
+                            <hr>
+                            <h3>Family Details</h3>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Father's Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="namalengkap" placeholder="Father's Name" required>
+                            <br>
+                            <hr>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mother's Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="namalengkap" placeholder="Mother's Name" required>
+                            <br>
+                            <hr>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="namalengkap" textarea="50" placeholder="Address" required>
+                            <br>
+                            
+                            
+                            <input id="saveForm" class="buttons" type="submit" name="submit" value="Submit" />
+                    <hr>
+                    </form>
+                                 
+
+                           
+                           
+                           
+			
+    </div>
+</body>
+<footer>
+	<div class="footer"><h5>&copy 2022 by Ritik Kesarwani</h5></div>
+</footer>
+</html>
